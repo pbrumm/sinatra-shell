@@ -1,6 +1,6 @@
 module Application
   module Helpers
-    module Rack
+    module Utils
       include Rack::Utils
       alias :h :escape_html
     end

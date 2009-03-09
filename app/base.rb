@@ -1,7 +1,9 @@
 module Application
   class << self
+    attr_reader :config
+    
     def new(path_to_config = 'config/app.yml')
-      @config_path = config_path
+      @config_path = path_to_config
       DataMapper.setup(:default, config[:db])
       Sinatra::Application
     end

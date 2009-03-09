@@ -4,6 +4,6 @@ module Application
   module Helpers
     # Include your helper modules here
     
-    include Rack
+    include Utils
   end
 end

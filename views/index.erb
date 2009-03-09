@@ -7,3 +7,11 @@
   <li>Edit views/not_found.erb for personalised 404 pages</li>
   <li>Edit app/web.rb to make new actions</li>
 </ul>
+
+<h2>Configuration variables</h2>
+<dl>
+<% ::Application.config.each_pair do |k, v| %>
+  <dt><%= k %></dt>
+  <dd><%= v %></dd>
+<% end %>
+</dl>
